@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="et_emailSignin" type="id">15dp</item>
+    <item name="et_passwordSignin" type="id">15dp</item>
+    <item name="button_signinSignin" type="id">15dp</item>
+    <item name="button_signupSignin" type="id">15dp</item>
+    <item name="et_emailSignup" type="id">15dp</item>
+    <item name="et_passwordSignup" type="id">15dp</item>
+    <item name="et_passwordSignup2" type="id">15dp</item>
+    <item name="button_signupSignup" type="id">15dp</item>
+    <item name="tv_namaMain" type="id">15dp</item>
+    <item name="button_logoutMain" type="id">15dp</item>
+</resources>

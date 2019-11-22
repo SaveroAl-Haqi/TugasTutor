@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="urlText" type="id">16dp</item>
+    <item name="btnSatu" type="id">14dp</item>
+    <item name="angkaSatu" type="id">15dp</item>
+    <item name="angkaDua" type="id">15dp</item>
+</resources>
