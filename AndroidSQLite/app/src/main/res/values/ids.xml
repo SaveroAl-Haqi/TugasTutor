@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="add_record" type="id">15dp</item>
+    <item name="kelas_edittext" type="id">15dp</item>
+    <item name="nama_edittext" type="id">15dp</item>
+    <item name="btn_delete" type="id">15dp</item>
+    <item name="btn_update" type="id">15dp</item>
+</resources>

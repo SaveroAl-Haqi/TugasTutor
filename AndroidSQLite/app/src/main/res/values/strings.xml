@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">AndroidSQLite</string>
+    <string name="empty_list_text">15dp</string>
+    <string name="add_record">15dp</string>
+    <string name="enter_kelas">15dp</string>
+    <string name="enter_nama">15dp</string>
+    <string name="btn_update">15dp</string>
+    <string name="btn_delete">15dp</string>
+</resources>
