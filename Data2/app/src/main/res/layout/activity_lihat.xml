@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context="LihatActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lihatTulisanNRP"
+        android:paddingTop="10.3sp"
+        android:paddingBottom="10sp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:text="@string/nrp"
+        android:textSize="16dp"/>
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/lihatTextViewNRP"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:paddingTop="10.3dp"
+        android:paddingBottom="10.3dp"
+        android:textSize="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lihatTulisanNama"
+        android:paddingTop="10.3sp"
+        android:paddingBottom="10sp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:text="@string/Nama"
+        android:textSize="16dp"
+        android:layout_below="@+id/lihatTulisanNRP"/>
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/lihatTextViewNama"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:paddingTop="10.3dp"
+        android:paddingBottom="10.3dp"
+        android:textSize="16dp"
+        android:layout_below="@+id/lihatTextViewNRP"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lihatTulisanAlamat"
+        android:paddingTop="10.3sp"
+        android:paddingBottom="10sp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:text="@string/Alamat"
+        android:textSize="16dp"
+        android:layout_below="@+id/lihatTulisanNama"/>
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/lihatTextViewAlamat"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:paddingTop="10.3dp"
+        android:paddingBottom="10.3dp"
+        android:textSize="16dp"
+        android:layout_below="@+id/lihatTextViewNama"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lihatButtonKembali"
+        android:text="@string/kembali"
+        android:layout_below="@+id/lihatTulisanAlamat"
+        android:textSize="16dp"
+        android:onClick="fungsiKembali"
+        tools:ignore="OnClick" />
+
+</RelativeLayout>

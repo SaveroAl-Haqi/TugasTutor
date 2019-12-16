@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Data2</string>
+    <string name="tambah_data">10dp</string>
+    <string name="nrp">10dp</string>
+    <string name="kembali">15dp</string>
+    <string name="Nama">15dp</string>
+    <string name="Alamat">15dp</string>
+</resources>

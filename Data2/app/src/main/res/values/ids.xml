@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="lihatTulisanNama" type="id">15dp</item>
+    <item name="lihatTulisanNRP" type="id">15dp</item>
+    <item name="lihatTextViewNama" type="id">15dp</item>
+</resources>
