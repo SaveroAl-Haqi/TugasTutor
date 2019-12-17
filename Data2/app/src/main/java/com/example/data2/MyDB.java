@@ -20,14 +20,11 @@ public class MyDB extends SQLiteOpenHelper {
     @Override
     public void  onCreate(SQLiteDatabase db){
         try {
-            String sql="create table biodata (nrp integer primary key."+"nama text, alamat text);";
+            String sql="create table biodata (nrp integer primary key,"+"nama text, alamat text);";
             db.execSQL(sql);
-            int text;
-            Toast.makeText(mContext, text "Table Create Successfull", Toast.LENGTH_LONG).show();
+            Toast.makeText(mContext, "Table Create Successfull", Toast.LENGTH_LONG).show();
         } catch (Exception e){
-            String tag;
-            Object msg;
-            Log.e(tag "Error", msg "Table Creation Error", e);
+            Log.e( "Error", "Table Creation Error", e);
         }
     }
 
@@ -52,10 +49,9 @@ public class MyDB extends SQLiteOpenHelper {
         try {
             String sql="select * from where nrp="+nrp+";";
             SQLiteDatabase db=getReadableDatabase();
-            String[] selectionArgs;
-            Cursor cursor=db.rawQuery(sql, selectionArgs null);
-            return cursor
-        }catch (Exception e)
+            Cursor cursor=db.rawQuery(sql, null);
+            return cursor;
+        }catch (Exception e){
             return null;
     }
 }
@@ -63,8 +59,7 @@ public class MyDB extends SQLiteOpenHelper {
     try {
         String sql="select*from biodata";
         SQLiteDatabase db=getReadableDatabase();
-        String[] selectionArgs;
-        Cursor cursor=db.rawQuery(sql, selectionArgs null);
+        Cursor cursor=db.rawQuery(sql, null);
         return cursor;
     }catch (Exception e){
         return null;

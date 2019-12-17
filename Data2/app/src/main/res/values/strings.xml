@@ -5,4 +5,7 @@
     <string name="kembali">15dp</string>
     <string name="Nama">15dp</string>
     <string name="Alamat">15dp</string>
+    <string name="nama">Nama</string>
+    <string name="simpan">Simpan</string>
+    <string name="ubah">ubah</string>
 </resources>

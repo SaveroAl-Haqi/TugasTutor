@@ -6,12 +6,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="10dp"
-    tools:context="LihatActivity">
+    tools:context="UbahActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/lihatTulisanNRP"
+        android:id="@+id/ubahTulisanNRP"
         android:paddingTop="10.3sp"
         android:paddingBottom="10sp"
         android:layout_alignParentStart="true"
@@ -22,7 +22,7 @@
     <EditText
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:id="@+id/lihatTextViewNRP"
+        android:id="@+id/ubahEditTextNRP"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_marginEnd="15dp"
@@ -34,19 +34,19 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/lihatTulisanNama"
+        android:id="@+id/ubahTulisanNama"
         android:paddingTop="10.3sp"
         android:paddingBottom="10sp"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
-        android:text="@string/nrp"
+        android:text="@string/Nama"
         android:textSize="16sp"
-        android:layout_below="@+id/lihatTulisanNRP"/>
+        android:layout_below="@+id/ubahTulisanNRP"/>
 
     <EditText
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:id="@+id/lihatTextViewNama"
+        android:id="@+id/ubahEditTextNama"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_marginEnd="15dp"
@@ -54,24 +54,24 @@
         android:paddingTop="10.3dp"
         android:paddingBottom="10.3dp"
         android:textSize="16sp"
-        android:layout_below="@+id/lihatTulisanNRP"/>
+        android:layout_below="@+id/ubahEditTextNRP"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/lihatTulisanAlamat"
+        android:id="@+id/ubahTulisanAlamat"
         android:paddingTop="10.3sp"
         android:paddingBottom="10sp"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:text="@string/Alamat"
         android:textSize="16sp"
-        android:layout_below="@+id/lihatTulisanNama"/>
+        android:layout_below="@+id/ubahTulisanNama"/>
 
     <EditText
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:id="@+id/lihatTextViewAlamat"
+        android:id="@+id/ubahEditTextAlamat"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_marginEnd="15dp"
@@ -79,14 +79,24 @@
         android:paddingTop="10.3dp"
         android:paddingBottom="10.3dp"
         android:textSize="16sp"
-        android:layout_below="@+id/lihatTextViewNama"/>
+        android:layout_below="@+id/ubahEditTextNama"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/lihatButtonKembali"
+        android:id="@+id/ubahButtonUbah"
+        android:text="@string/ubah"
+        android:layout_below="@+id/ubahEditTextAlamat"
+        android:textSize="16sp"
+        android:onClick="fungsiUbah"
+        tools:ignore="OnClick" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ubahButtonKembali"
         android:text="@string/kembali"
-        android:layout_below="@+id/lihatTulisanAlamat"
+        android:layout_below="@+id/ubahButtonUbah"
         android:textSize="16sp"
         android:onClick="fungsiKembali"
         tools:ignore="OnClick" />

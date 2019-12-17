@@ -33,11 +33,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        String msg;
-        Log.d(TAG, msg"onCreate: started.");
+        Log.d(TAG, "onCreate: started.");
 
-        Context context;
-        myDB = new MyDB(context MainActivity.this);
+
+        myDB = new MyDB( MainActivity.this);
         arrayListNama = new ArrayList<>();
         arrayListNRP = new ArrayList<>();
         buttonTambah = findViewById(R.id.mainButtonTambahData);
@@ -46,20 +45,18 @@ public class MainActivity extends AppCompatActivity {
         Cursor cursor = myDB.tampilSemuaDataMahasiswa();
         if (cursor.getCount() > 0) {
             while (cursor.moveToNext()) {
-                int columnindex;
-                arrayListNRP.add(Integer.parseInt(cursor.getString(columnindex 0)));
-                arrayListNama.add(cursor.getString(columnindex 1));
+                arrayListNRP.add(Integer.parseInt(cursor.getString( 0)));
+                arrayListNama.add(cursor.getString( 1));
             }
         }
-        arrayAdapter = new ArrayAdapter<>(context MainActivity.this, android.R.layout.simple_list_item_1, arrayListNama);
+        arrayAdapter = new ArrayAdapter<>( MainActivity.this, android.R.layout.simple_list_item_1, arrayListNama);
         listView.setAdapter(arrayAdapter);
 
         registerForContextMenu(listView);
     }
 
     public void fungsiTambahData(View view) {
-        String packageContent;
-        Intent intent = new Intent(packageContent this, TambahActivity.class);
+        Intent intent = new Intent( this, TambahActivity.class);
         startActivity(intent);
     }
 
@@ -70,17 +67,14 @@ public class MainActivity extends AppCompatActivity {
         int index = info.position;
         menu.setHeaderTitle("Pilih Option");
         //groupID, itemID, order, title
-        int order;
-        Object title;
-        menu.add(index, v.getId(), order 0, title"View");
-        menu.add(index, v.getId(), order 0, title"Edit");
-        menu.add(index, v.getId(), order 0, title"Delete");
+        menu.add(index, v.getId(), 0, "View");
+        menu.add(index, v.getId(), 0, "Edit");
+        menu.add(index, v.getId(), 0, "Delete");
 
     }
 
     @Override
-    public boolean onContextItemSelected(MenuItem menuItem) {
-        ActionBar item;
+    public boolean onContextItemSelected(MenuItem item) {
         if (item.getTitle() == "View") {
         Intent intent = new Intent(MainActivity.this, LihatActivity.class);
         intent.putExtra("mainNRP", arrayListNRP.get(item.getGroupId()));
